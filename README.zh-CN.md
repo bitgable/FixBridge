@@ -26,7 +26,16 @@ iOS 会自行决定是否采用配件位置。「已确认」计数表示数据�
 
 - 运行 **macOS 14 Sonoma 或更新版本**的 Mac。从源码构建需使用支持 Swift 6 的 Xcode。Release 配置支持 Apple 芯片和 Intel。
 - 一台 iPhone，以及支持数据传输的 USB 线，或已与 Mac 配对的蓝牙连接。
-- 你有权使用的 MFi-v3 证书和匹配私钥，需自行提供。支持 DER PKCS#7 证书（`certificate.p7b`）和未加密的 DER PKCS#8 P-256 私钥（`identity.pk8`）。
+- 一份 MFi-v3 证书（DER PKCS#7）及其配套私钥（未加密的 DER PKCS#8，P-256）。
+
+### 获取 MFi-v3 凭据
+
+[DiPlay v0.2.7](https://github.com/shihabal3amri/DiPlay/releases/tag/v0.2.7) 的 APK 公开提供了一组实验用凭据。到发布页的 **Assets** 下载 `DiPlay-0.2.7.apk`，在 Mac 上将它作为 ZIP 压缩包打开，从同一个 APK 中提取下面两个文件。整个过程无需安装 DiPlay。
+
+- `assets/offline-mfi/certificate.p7b`
+- `assets/offline-mfi/identity.pk8`
+
+使用前请核实这组凭据的来源，并确认你有权使用。后续版本的 iOS 可能不再接受这组实验用凭据。
 
 ### 构建并运行
 

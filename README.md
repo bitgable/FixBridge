@@ -26,7 +26,16 @@ iOS decides whether to use the accessory’s position. **Packets acknowledged** 
 
 - A Mac running **macOS 14 Sonoma or later** and Xcode with Swift 6 support to build from source. Release builds target Apple silicon and Intel.
 - An iPhone and a USB data cable, or an iPhone paired with the Mac over Bluetooth.
-- An MFi-v3 certificate and matching private key you are authorized to use. Bring your own DER PKCS#7 certificate (`certificate.p7b`) and unencrypted DER PKCS#8 P-256 private key (`identity.pk8`).
+- An MFi-v3 certificate (DER PKCS#7) and its matching private key (unencrypted DER PKCS#8, P-256).
+
+### Find MFi-v3 credentials
+
+One publicly available source of experimental credentials is [DiPlay v0.2.7](https://github.com/shihabal3amri/DiPlay/releases/tag/v0.2.7). Download `DiPlay-0.2.7.apk` from **Assets** and open it as a ZIP archive. Extract these two files from the same APK. You can do this on your Mac without installing DiPlay.
+
+- `assets/offline-mfi/certificate.p7b`
+- `assets/offline-mfi/identity.pk8`
+
+Review the credentials’ provenance before use and make sure you are authorized to use them. iOS may stop accepting this experimental identity.
 
 ### Build and run
 
