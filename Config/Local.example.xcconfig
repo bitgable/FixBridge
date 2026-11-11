@@ -1,0 +1,7 @@
+// Copy this file to Local.xcconfig to use your own bundle identifier and signing identity.
+PRODUCT_BUNDLE_IDENTIFIER = org.example.fixbridge
+// DEVELOPMENT_TEAM = YOUR_TEAM_ID
+// CODE_SIGN_IDENTITY = Apple Development
+
+// Set to the original bundle ID only when preserving an existing legacy route library.
+// FIXBRIDGE_LEGACY_BUNDLE_IDENTIFIER = $(PRODUCT_BUNDLE_IDENTIFIER)

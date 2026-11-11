@@ -1,0 +1,34 @@
+.DS_Store
+build/
+DerivedData/
+xcuserdata/
+*.pk8
+*.p7b
+
+# Local build and deployment settings
+.wrangler/
+.env
+.env.*
+!.env.example
+Local.xcconfig
+*.xcuserstate
+*.mobileprovision
+*.provisionprofile
+
+# Credentials, exports and device diagnostics
+*.p12
+*.pfx
+*.pem
+*.key
+*.mobileconfig
+*.log
+*.gpx
+
+# Local research and device test records
+/Docs/MFi-Location-Research.md
+/Docs/ProtocolReview-20261110.md
+
+# Packaged builds and exported archives
+*.xcarchive/
+*.dmg
+*.zip

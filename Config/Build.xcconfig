@@ -1,0 +1,8 @@
+// Build defaults for a checkout without a developer account or publishing configuration.
+CODE_SIGN_STYLE = Manual
+CODE_SIGN_IDENTITY = -
+PRODUCT_BUNDLE_IDENTIFIER = org.example.fixbridge
+
+FIXBRIDGE_LEGACY_BUNDLE_IDENTIFIER =
+
+#include? "Local.xcconfig"

@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000028 /* FixBridgeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000014 /* FixBridgeApp.swift */; };
+		000000000000000000000029 /* MFIIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000015 /* MFIIdentity.swift */; };
+		00000000000000000000002A /* AccessorySession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000016 /* AccessorySession.swift */; };
+		00000000000000000000002B /* MobileUSB.c in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000017 /* MobileUSB.c */; };
+		00000000000000000000002C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000019 /* Localizable.strings */; };
+		00000000000000000000002D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001A /* InfoPlist.strings */; };
+		00000000000000000000002E /* PhoneSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001D /* PhoneSettings.swift */; };
+		00000000000000000000002F /* BluetoothTransport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000001E /* BluetoothTransport.swift */; };
+		000000000000000000000030 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000020 /* Assets.xcassets */; };
+		220000000000000000000001 /* FixBridgeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000001 /* FixBridgeError.swift */; };
+		220000000000000000000002 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000002 /* Location.swift */; };
+		220000000000000000000003 /* SavedLocationStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000003 /* SavedLocationStore.swift */; };
+		220000000000000000000004 /* TerrainElevation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000004 /* TerrainElevation.swift */; };
+		220000000000000000000005 /* FixBridgeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000005 /* FixBridgeViewModel.swift */; };
+		220000000000000000000006 /* TargetLocationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000006 /* TargetLocationViewModel.swift */; };
+		220000000000000000000007 /* MapPointPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000007 /* MapPointPickerViewModel.swift */; };
+		220000000000000000000008 /* SegmentedModeControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000008 /* SegmentedModeControl.swift */; };
+		220000000000000000000009 /* FixBridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000009 /* FixBridgeView.swift */; };
+		22000000000000000000000A /* LocationRefreshGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21000000000000000000000A /* LocationRefreshGuide.swift */; };
+		22000000000000000000000B /* MapPointPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21000000000000000000000B /* MapPointPicker.swift */; };
+		22000000000000000000000C /* SavedLocationEditorSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21000000000000000000000C /* SavedLocationEditorSheet.swift */; };
+		22000000000000000000000D /* TargetLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21000000000000000000000D /* TargetLocationView.swift */; };
+		22000000000000000000000E /* ToolProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21000000000000000000000E /* ToolProcess.swift */; };
+		250000000000000000000001 /* BluetoothPairingGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250000000000000000000002 /* BluetoothPairingGuide.swift */; };
+		280000000000000000000001 /* USBConnectionGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280000000000000000000002 /* USBConnectionGuide.swift */; };
+		290000000000000000000001 /* ConnectionGuideSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290000000000000000000002 /* ConnectionGuideSheet.swift */; };
+		300000000000000000000001 /* BackgroundTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300000000000000000000002 /* BackgroundTask.swift */; };
+		310000000000000000000001 /* ConnectionControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 310000000000000000000002 /* ConnectionControlsView.swift */; };
+		320000000000000000000001 /* SessionLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320000000000000000000002 /* SessionLocation.swift */; };
+		330000000000000000000001 /* LocationSubscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 330000000000000000000002 /* LocationSubscription.swift */; };
+		340000000000000000000001 /* USBSessionRecovery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340000000000000000000002 /* USBSessionRecovery.swift */; };
+		350000000000000000000001 /* GPXRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350000000000000000000002 /* GPXRoute.swift */; };
+		360000000000000000000001 /* GPXRouteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 360000000000000000000002 /* GPXRouteViewModel.swift */; };
+		370000000000000000000001 /* SavedRouteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 370000000000000000000002 /* SavedRouteStore.swift */; };
+		380000000000000000000001 /* RoutePreviewSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380000000000000000000002 /* RoutePreviewSheet.swift */; };
+		390000000000000000000001 /* RouteMapPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 390000000000000000000002 /* RouteMapPreview.swift */; };
+		400000000000000000000001 /* MapCoordinateProjection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 400000000000000000000002 /* MapCoordinateProjection.swift */; };
+		410000000000000000000001 /* ThirdPartyNotices.txt in Resources */ = {isa = PBXBuildFile; fileRef = 410000000000000000000002 /* ThirdPartyNotices.txt */; };
+		420000000000000000000001 /* ApplicationIdentity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 420000000000000000000002 /* ApplicationIdentity.swift */; };
+		430000000000000000000001 /* IAP2Protocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 430000000000000000000002 /* IAP2Protocol.swift */; };
+		440000000000000000000001 /* LocationInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 440000000000000000000002 /* LocationInput.swift */; };
+		450000000000000000000001 /* SavedLocationEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 450000000000000000000002 /* SavedLocationEditorViewModel.swift */; };
+		460000000000000000000001 /* RouteEditorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460000000000000000000002 /* RouteEditorViewModel.swift */; };
+		470000000000000000000001 /* RouteMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 470000000000000000000002 /* RouteMapViewModel.swift */; };
+		480000000000000000000001 /* DynamicNetworkGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 480000000000000000000002 /* DynamicNetworkGuide.swift */; };
+		490000000000000000000001 /* SentLocationConsole.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490000000000000000000002 /* SentLocationConsole.swift */; };
+		510000000000000000000001 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 510000000000000000000004 /* Credits.rtf */; };
+		510000000000000000000005 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = 510000000000000000000006 /* License.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000014 /* FixBridgeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixBridgeApp.swift; sourceTree = "<group>"; };
+		000000000000000000000015 /* MFIIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFIIdentity.swift; sourceTree = "<group>"; };
+		000000000000000000000016 /* AccessorySession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessorySession.swift; sourceTree = "<group>"; };
+		000000000000000000000017 /* MobileUSB.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = MobileUSB.c; sourceTree = "<group>"; };
+		000000000000000000000018 /* MobileUSB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MobileUSB.h; sourceTree = "<group>"; };
+		00000000000000000000001B /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		00000000000000000000001C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		00000000000000000000001D /* PhoneSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSettings.swift; sourceTree = "<group>"; };
+		00000000000000000000001E /* BluetoothTransport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothTransport.swift; sourceTree = "<group>"; };
+		00000000000000000000001F /* BluetoothBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BluetoothBridge.m; sourceTree = "<group>"; };
+		000000000000000000000020 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		100000000000000000000006 /* FixBridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; path = FixBridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		210000000000000000000001 /* FixBridgeError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixBridgeError.swift; sourceTree = "<group>"; };
+		210000000000000000000002 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		210000000000000000000003 /* SavedLocationStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationStore.swift; sourceTree = "<group>"; };
+		210000000000000000000004 /* TerrainElevation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TerrainElevation.swift; sourceTree = "<group>"; };
+		210000000000000000000005 /* FixBridgeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixBridgeViewModel.swift; sourceTree = "<group>"; };
+		210000000000000000000006 /* TargetLocationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetLocationViewModel.swift; sourceTree = "<group>"; };
+		210000000000000000000007 /* MapPointPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointPickerViewModel.swift; sourceTree = "<group>"; };
+		210000000000000000000008 /* SegmentedModeControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedModeControl.swift; sourceTree = "<group>"; };
+		210000000000000000000009 /* FixBridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixBridgeView.swift; sourceTree = "<group>"; };
+		21000000000000000000000A /* LocationRefreshGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationRefreshGuide.swift; sourceTree = "<group>"; };
+		21000000000000000000000B /* MapPointPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapPointPicker.swift; sourceTree = "<group>"; };
+		21000000000000000000000C /* SavedLocationEditorSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationEditorSheet.swift; sourceTree = "<group>"; };
+		21000000000000000000000D /* TargetLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetLocationView.swift; sourceTree = "<group>"; };
+		21000000000000000000000E /* ToolProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolProcess.swift; sourceTree = "<group>"; };
+		250000000000000000000002 /* BluetoothPairingGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothPairingGuide.swift; sourceTree = "<group>"; };
+		280000000000000000000002 /* USBConnectionGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBConnectionGuide.swift; sourceTree = "<group>"; };
+		290000000000000000000002 /* ConnectionGuideSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionGuideSheet.swift; sourceTree = "<group>"; };
+		300000000000000000000002 /* BackgroundTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTask.swift; sourceTree = "<group>"; };
+		310000000000000000000002 /* ConnectionControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionControlsView.swift; sourceTree = "<group>"; };
+		320000000000000000000002 /* SessionLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionLocation.swift; sourceTree = "<group>"; };
+		330000000000000000000002 /* LocationSubscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSubscription.swift; sourceTree = "<group>"; };
+		340000000000000000000002 /* USBSessionRecovery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USBSessionRecovery.swift; sourceTree = "<group>"; };
+		350000000000000000000002 /* GPXRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRoute.swift; sourceTree = "<group>"; };
+		360000000000000000000002 /* GPXRouteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPXRouteViewModel.swift; sourceTree = "<group>"; };
+		370000000000000000000002 /* SavedRouteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedRouteStore.swift; sourceTree = "<group>"; };
+		380000000000000000000002 /* RoutePreviewSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutePreviewSheet.swift; sourceTree = "<group>"; };
+		390000000000000000000002 /* RouteMapPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapPreview.swift; sourceTree = "<group>"; };
+		400000000000000000000002 /* MapCoordinateProjection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapCoordinateProjection.swift; sourceTree = "<group>"; };
+		410000000000000000000002 /* ThirdPartyNotices.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = ThirdPartyNotices.txt; sourceTree = "<group>"; };
+		420000000000000000000002 /* ApplicationIdentity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationIdentity.swift; sourceTree = "<group>"; };
+		430000000000000000000002 /* IAP2Protocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAP2Protocol.swift; sourceTree = "<group>"; };
+		440000000000000000000002 /* LocationInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInput.swift; sourceTree = "<group>"; };
+		450000000000000000000002 /* SavedLocationEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedLocationEditorViewModel.swift; sourceTree = "<group>"; };
+		460000000000000000000002 /* RouteEditorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteEditorViewModel.swift; sourceTree = "<group>"; };
+		470000000000000000000002 /* RouteMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouteMapViewModel.swift; sourceTree = "<group>"; };
+		480000000000000000000002 /* DynamicNetworkGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicNetworkGuide.swift; sourceTree = "<group>"; };
+		490000000000000000000002 /* SentLocationConsole.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SentLocationConsole.swift; sourceTree = "<group>"; };
+		510000000000000000000004 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
+		510000000000000000000006 /* License.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		520000000000000000000002 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		520000000000000000000003 /* zh-HK */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-HK"; path = "zh-HK.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		520000000000000000000004 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		520000000000000000000005 /* zh-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-TW"; path = "zh-TW.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		530000000000000000000002 /* Build.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Build.xcconfig; sourceTree = "<group>"; };
+		530000000000000000000003 /* Local.example.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Local.example.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		100000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000005 /* FixBridge */,
+				530000000000000000000001 /* Config */,
+				100000000000000000000003 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		100000000000000000000003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				100000000000000000000006 /* FixBridge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		100000000000000000000005 /* FixBridge */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000014 /* FixBridgeApp.swift */,
+				200000000000000000000001 /* Models */,
+				200000000000000000000002 /* Services */,
+				200000000000000000000003 /* ViewModels */,
+				200000000000000000000004 /* Views */,
+				520000000000000000000001 /* Resources */,
+			);
+			path = FixBridge;
+			sourceTree = "<group>";
+		};
+		200000000000000000000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				440000000000000000000002 /* LocationInput.swift */,
+				430000000000000000000002 /* IAP2Protocol.swift */,
+				350000000000000000000002 /* GPXRoute.swift */,
+				210000000000000000000001 /* FixBridgeError.swift */,
+				210000000000000000000002 /* Location.swift */,
+				320000000000000000000002 /* SessionLocation.swift */,
+				330000000000000000000002 /* LocationSubscription.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		200000000000000000000002 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				500000000000000000000001 /* Native */,
+				400000000000000000000002 /* MapCoordinateProjection.swift */,
+				370000000000000000000002 /* SavedRouteStore.swift */,
+				000000000000000000000016 /* AccessorySession.swift */,
+				340000000000000000000002 /* USBSessionRecovery.swift */,
+				00000000000000000000001E /* BluetoothTransport.swift */,
+				420000000000000000000002 /* ApplicationIdentity.swift */,
+				000000000000000000000015 /* MFIIdentity.swift */,
+				00000000000000000000001D /* PhoneSettings.swift */,
+				21000000000000000000000E /* ToolProcess.swift */,
+				300000000000000000000002 /* BackgroundTask.swift */,
+				210000000000000000000003 /* SavedLocationStore.swift */,
+				210000000000000000000004 /* TerrainElevation.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		200000000000000000000003 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				470000000000000000000002 /* RouteMapViewModel.swift */,
+				460000000000000000000002 /* RouteEditorViewModel.swift */,
+				450000000000000000000002 /* SavedLocationEditorViewModel.swift */,
+				360000000000000000000002 /* GPXRouteViewModel.swift */,
+				210000000000000000000005 /* FixBridgeViewModel.swift */,
+				210000000000000000000006 /* TargetLocationViewModel.swift */,
+				210000000000000000000007 /* MapPointPickerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		200000000000000000000004 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				490000000000000000000002 /* SentLocationConsole.swift */,
+				480000000000000000000002 /* DynamicNetworkGuide.swift */,
+				390000000000000000000002 /* RouteMapPreview.swift */,
+				380000000000000000000002 /* RoutePreviewSheet.swift */,
+				250000000000000000000002 /* BluetoothPairingGuide.swift */,
+				280000000000000000000002 /* USBConnectionGuide.swift */,
+				290000000000000000000002 /* ConnectionGuideSheet.swift */,
+				310000000000000000000002 /* ConnectionControlsView.swift */,
+				210000000000000000000008 /* SegmentedModeControl.swift */,
+				210000000000000000000009 /* FixBridgeView.swift */,
+				21000000000000000000000A /* LocationRefreshGuide.swift */,
+				21000000000000000000000B /* MapPointPicker.swift */,
+				21000000000000000000000C /* SavedLocationEditorSheet.swift */,
+				21000000000000000000000D /* TargetLocationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		500000000000000000000001 /* Native */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000001F /* BluetoothBridge.m */,
+				000000000000000000000017 /* MobileUSB.c */,
+				000000000000000000000018 /* MobileUSB.h */,
+			);
+			path = Native;
+			sourceTree = "<group>";
+		};
+		520000000000000000000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				410000000000000000000002 /* ThirdPartyNotices.txt */,
+				510000000000000000000004 /* Credits.rtf */,
+				510000000000000000000006 /* License.txt */,
+				000000000000000000000020 /* Assets.xcassets */,
+				000000000000000000000019 /* Localizable.strings */,
+				00000000000000000000001A /* InfoPlist.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		530000000000000000000001 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				530000000000000000000002 /* Build.xcconfig */,
+				530000000000000000000003 /* Local.example.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		100000000000000000000004 /* FixBridge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 100000000000000000000009 /* Build configuration list for PBXNativeTarget "FixBridge" */;
+			buildPhases = (
+				100000000000000000000007 /* Sources */,
+				10000000000000000000000F /* Resources */,
+				100000000000000000000010 /* Build Bluetooth Component */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FixBridge;
+			productName = FixBridge;
+			productReference = 100000000000000000000006 /* FixBridge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		100000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+			};
+			buildConfigurationList = 100000000000000000000008 /* Build configuration list for PBXProject "FixBridge" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				"zh-Hans",
+				"zh-HK",
+				"zh-TW",
+			);
+			mainGroup = 100000000000000000000002;
+			productRefGroup = 100000000000000000000003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				100000000000000000000004 /* FixBridge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		10000000000000000000000F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				410000000000000000000001 /* ThirdPartyNotices.txt in Resources */,
+				510000000000000000000001 /* Credits.rtf in Resources */,
+				510000000000000000000005 /* License.txt in Resources */,
+				000000000000000000000030 /* Assets.xcassets in Resources */,
+				00000000000000000000002C /* Localizable.strings in Resources */,
+				00000000000000000000002D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		100000000000000000000010 /* Build Bluetooth Component */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/FixBridge/Services/Native/BluetoothBridge.m",
+			);
+			name = "Build Bluetooth Component";
+			outputPaths = (
+				"$(TARGET_BUILD_DIR)/$(EXECUTABLE_FOLDER_PATH)/FixBridgeBluetooth",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -eu\nsource_file=\"$SCRIPT_INPUT_FILE_0\"\noutput_file=\"$SCRIPT_OUTPUT_FILE_0\"\nmkdir -p \"$(dirname \"$output_file\")\"\nset --\nfor arch in $ARCHS; do\n    set -- \"$@\" -arch \"$arch\"\ndone\nxcrun clang \"$@\" -isysroot \"$SDKROOT\" -mmacosx-version-min=\"$MACOSX_DEPLOYMENT_TARGET\" -fobjc-arc -framework Foundation -framework IOBluetooth \"$source_file\" -o \"$output_file\"\nif [ \"${CODE_SIGNING_ALLOWED:-NO}\" = YES ]; then\n    codesign --force --sign \"${EXPANDED_CODE_SIGN_IDENTITY:--}\" --options runtime --timestamp=none \"$output_file\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		100000000000000000000007 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490000000000000000000001 /* SentLocationConsole.swift in Sources */,
+				480000000000000000000001 /* DynamicNetworkGuide.swift in Sources */,
+				470000000000000000000001 /* RouteMapViewModel.swift in Sources */,
+				460000000000000000000001 /* RouteEditorViewModel.swift in Sources */,
+				450000000000000000000001 /* SavedLocationEditorViewModel.swift in Sources */,
+				440000000000000000000001 /* LocationInput.swift in Sources */,
+				400000000000000000000001 /* MapCoordinateProjection.swift in Sources */,
+				390000000000000000000001 /* RouteMapPreview.swift in Sources */,
+				380000000000000000000001 /* RoutePreviewSheet.swift in Sources */,
+				370000000000000000000001 /* SavedRouteStore.swift in Sources */,
+				360000000000000000000001 /* GPXRouteViewModel.swift in Sources */,
+				430000000000000000000001 /* IAP2Protocol.swift in Sources */,
+				350000000000000000000001 /* GPXRoute.swift in Sources */,
+				000000000000000000000028 /* FixBridgeApp.swift in Sources */,
+				220000000000000000000001 /* FixBridgeError.swift in Sources */,
+				220000000000000000000002 /* Location.swift in Sources */,
+				220000000000000000000003 /* SavedLocationStore.swift in Sources */,
+				220000000000000000000004 /* TerrainElevation.swift in Sources */,
+				220000000000000000000005 /* FixBridgeViewModel.swift in Sources */,
+				220000000000000000000006 /* TargetLocationViewModel.swift in Sources */,
+				220000000000000000000007 /* MapPointPickerViewModel.swift in Sources */,
+				250000000000000000000001 /* BluetoothPairingGuide.swift in Sources */,
+				280000000000000000000001 /* USBConnectionGuide.swift in Sources */,
+				290000000000000000000001 /* ConnectionGuideSheet.swift in Sources */,
+				310000000000000000000001 /* ConnectionControlsView.swift in Sources */,
+				220000000000000000000008 /* SegmentedModeControl.swift in Sources */,
+				220000000000000000000009 /* FixBridgeView.swift in Sources */,
+				22000000000000000000000A /* LocationRefreshGuide.swift in Sources */,
+				22000000000000000000000B /* MapPointPicker.swift in Sources */,
+				22000000000000000000000C /* SavedLocationEditorSheet.swift in Sources */,
+				22000000000000000000000D /* TargetLocationView.swift in Sources */,
+				420000000000000000000001 /* ApplicationIdentity.swift in Sources */,
+				000000000000000000000029 /* MFIIdentity.swift in Sources */,
+				00000000000000000000002A /* AccessorySession.swift in Sources */,
+				340000000000000000000001 /* USBSessionRecovery.swift in Sources */,
+				00000000000000000000002B /* MobileUSB.c in Sources */,
+				00000000000000000000002E /* PhoneSettings.swift in Sources */,
+				22000000000000000000000E /* ToolProcess.swift in Sources */,
+				300000000000000000000001 /* BackgroundTask.swift in Sources */,
+				320000000000000000000001 /* SessionLocation.swift in Sources */,
+				330000000000000000000001 /* LocationSubscription.swift in Sources */,
+				00000000000000000000002F /* BluetoothTransport.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		000000000000000000000019 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00000000000000000000001B /* zh-Hans */,
+				520000000000000000000004 /* zh-TW */,
+				520000000000000000000002 /* zh-HK */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		00000000000000000000001A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00000000000000000000001C /* zh-Hans */,
+				520000000000000000000005 /* zh-TW */,
+				520000000000000000000003 /* zh-HK */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		10000000000000000000000B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		10000000000000000000000C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 530000000000000000000002 /* Build.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 201;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FixBridge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FixBridge;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "FixBridge uses Bluetooth to send accessory location updates to your paired iPhone.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 bitgable. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_NAME = FixBridge;
+				SWIFT_OBJC_BRIDGING_HEADER = FixBridge/Services/Native/MobileUSB.h;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		10000000000000000000000D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					arm64,
+					x86_64,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		10000000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 530000000000000000000002 /* Build.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CURRENT_PROJECT_VERSION = 201;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FixBridge/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = FixBridge;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSBluetoothAlwaysUsageDescription = "FixBridge uses Bluetooth to send accessory location updates to your paired iPhone.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2026 bitgable. All rights reserved.";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_NAME = FixBridge;
+				SWIFT_OBJC_BRIDGING_HEADER = FixBridge/Services/Native/MobileUSB.h;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		100000000000000000000008 /* Build configuration list for PBXProject "FixBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10000000000000000000000B /* Debug */,
+				10000000000000000000000D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		100000000000000000000009 /* Build configuration list for PBXNativeTarget "FixBridge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10000000000000000000000C /* Debug */,
+				10000000000000000000000E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 100000000000000000000001 /* Project object */;
+}
